@@ -1,0 +1,67 @@
+body, html{
+	height: 100%;
+}
+.wrapper{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/road.jpg");
+}
+h3{
+	margin-left: 370px;
+	font-size: 1.25em;
+	padding-bottom:10px;
+}
+*{
+	font-size: 1.01em;
+	font-family: sans-serif;
+	color:black;
+	font-weight:bold;
+}
+div.form{
+	margin-top: 70px;
+	margin-left: 130px;
+	margin-right: 130px;
+	background:rgba(255,255,255,0.2);
+	border-radius: 8px;
+	padding: 20px 50px;
+	color:#FCD917; 
+}
+[name="lname"],[name="fname"],[name="address"]{
+	padding:5px 5px 5px 5px;
+	margin:10px 70px 10px 30px;
+	float: right;
+	border-radius: 6px;
+	text-transform: capitalize
+}
+[name="dob"],[name="nic"]{
+	padding:5px 5px 5px 5px;
+	margin:10px 30px 10px 70px;
+	float: right;
+	border-radius: 6px;
+}
+textarea{
+	float: right;
+	border-radius: 6px;
+}
+input[type=submit],input[type=reset]{
+	padding: 5px 20px;
+	background-color:transparent;
+	border:0;
+	border-radius: 4px;
+	margin-left: 150px;
+	margin-top:20px;
+}
+input[type=submit]{
+	margin-left: 370px;
+}
+input[type=reset]{
+	margin-left: 20px;
+}
+input[type=submit]:hover,input[type=reset]:hover{
+	padding: 5px 20px;
+	background-color: #FCD917;
+	color: black;
+	border:0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+

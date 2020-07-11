@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Road Saviours Sri Lanka </title>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+	
+	<header>
+		<div class="row">
+			<div class="logo">
+			<img src="images/logo.jpeg">
+			</div>
+		<ul class="main-nav" "clearfix">
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#">SERVICES</a></li>
+			<li class="active"><a href="">CONTACT US</a></li>
+			<li><a href="#">NEWS</a></li>
+			<li><a href="#">FAQS</a></li>
+			
+		</ul>
+			
+		</div>
+
+		<div class="hero">
+		<h1>Contact Us</h1>
+		<h3>
+			<ul class= "con"><b>
+			<li>Call Us: <a href="#"> +9477 767 8678  / +9411 2678 678</a> </li><br>
+			<li>E-mail: <a href="#"> rssl@gmail.com</a> </li> <br>
+			<li>Address:<a href="#"> No.06, Kandy Road, Malabe, Sri Lanka.</a> </li>
+			</b></ul>
+
+		</h3>
+		
+		<p id="send">
+			<form method="post" action="contactus.php" id="message1">
+				Name : <input type="text" id='name1' name="name" required> 
+				Phone Number : <input type="text" id="phone1"  name="PhoneNumber" required>
+			<textarea name="message" rows="20" id="message2" cols="160" reqiured placeholder="Write your message here..." ></textarea> 
+			
+				<a href="javascript: submit()" class="btn"> SEND </a>
+			</form>			
+
+
+		</p>
+
+		</div>
+
+	
+	</header>
+	<script>
+		function submit(){
+			if(document.getElementById('name1').value == ""){
+				alert('Name field is empty');
+			}
+			else if(document.getElementById('phone1').value == ""){
+				alert('Phone Number field is empty');
+			}
+			else if(document.getElementById('message2').value == ""){
+				alert('Message field is empty');
+			}
+			else
+			{
+			document.forms['message1'].submit();
+			}
+		}
+	</script>
+
+</body>
+</html>

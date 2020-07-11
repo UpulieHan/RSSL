@@ -1,0 +1,27 @@
+html{
+	overflow-y:hidden;
+}
+.changeHead {
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.changep{
+	font-size: 20px;
+	text-align: left;
+}
+
+.carousel-item active{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+p{
+	background:rgba(255,255,255,0.6);
+	color:black;
+	padding:40px;
+}
+h3{
+	background:rgba(255,255,255,0.6);
+	color:black;
+	font-weight:bold;
+}
+

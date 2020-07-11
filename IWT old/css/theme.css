@@ -1,0 +1,133 @@
+/*to get rid of the default properties*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*to remove the underline of all the links*/
+* {
+	text-decoration: none;
+}
+
+/*the div that holds the whole page*/
+.wrapper{
+	margin: 0 auto;
+} 
+.header{
+	background-color: #ffe000;
+	height: 150px;
+}
+.img{
+	float: left;
+	padding: 20px 30px;
+	width: 100px;
+	height: 100px;
+}
+.title{
+	font-size: 2em;
+	font-family: sans-serif;
+	padding: 40px 50px 30px 200px;
+	width: 650px;
+}
+.topnav{
+	height: 50px;
+	float: right;
+	margin-top: -25px;
+	margin-right: 20px;
+	text-align: center;
+}
+.topnav ul{
+	height: 100%;
+	list-style-type: none; 
+}
+.topnav ul li{
+	font-weight: bold;
+	font-size: 1.1em;
+	display: inline-block;
+	height: 40px;
+	width: 90px;
+	color: #C2272D;
+}
+.topnav a{
+	line-height: 50px;
+	display: inline-block;
+	height: 100%;
+}
+.topnav a:hover{
+	background-color: black;
+	color: black;
+}
+.footer{
+	position: fixed;
+	left:0;
+	bottom: 0;
+	width: 100%;
+	background-color: #ffe000;
+	color: black;
+}
+.socialmedia-text{
+	width: 90%;
+	float: center;
+	padding-top: 10px;
+}
+.socialmedia-text h3{
+	padding: 5px 50px;
+}
+.socialmedia-text a{
+	float: right;
+	padding-left: 75%;
+}
+.socialmedia table{
+	padding: 0px 43px;
+}
+.socialmedia table tr td{
+	padding: 0px 5px;
+}
+.arrow{
+	width: 20px;
+	height: 20px;
+}
+.footer-img {
+	width: 30px;
+	height: 30px;
+}
+.copyright{
+	width: 30%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0px 10px 5px 10px;
+}
+.copyright p,a{
+	color: black;
+}
+.middle div{
+	display: inline-block;
+}
+.middle-left-panel{
+	float: left;
+	background-color: black;
+	width: 15%;
+	/*vh means verticle height of the standard browser*/
+	height: 100vh;
+}
+.middle-right-panel{
+	float: right;
+	background-color: black;
+	width: 15%;
+	height: 100vh;
+}
+/*
+    To be used for later if needed
+	.middle-trans-panel{
+	width: 70%;
+	height: 100vh;
+	background-image: url("../pics/bg6.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}*/
+.middle-trans-panel{
+	width: 70%;
+	height: 100vh;
+	background-image: url('../pics/bg6.jpg')	;
+}
+

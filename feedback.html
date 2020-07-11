@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>   	
+	 <title>Feedback Form</title>
+	<link rel="stylesheet" type="text/css" href="css/feedback.css">	
+	
+	<!--favicon-->
+    <link rel="shortcut icon" href="images/favicon.png">
+	
+<header>
+	<div class="row">
+			<div class="logo">
+			<img src="images/logo.jpg">
+			</div>
+		<ul class="main-nav" "clearfix">
+			<li><a href="home.html">HOME</a></li>
+			<li><a href="about.html">ABOUT US</a></li>
+			<li><a href="services.html">SERVICES</a></li>
+			<li class="active"><a href="#">FEEDBACK</a></li>
+			<li><a href="contactUs.html">CONTACT US</a></li>
+		</ul>
+			
+		</div>
+	
+
+</head>
+<body 
+			style='background-image: url("images/4k.jpg"); height: 100%;
+			 width: 100%; 
+    		/* Center and scale the image nicely */
+    		background-position: stretch;
+    		background-repeat: no-repeat;
+    		background-size: cover;'>
+    		
+
+   
+  	<div class="feedback_form">  		
+
+		<form name="myForm" method="post" onsubmit="return validateForm();">
+
+			<table border="0">
+			<tr>
+				<td><input type="text" name="fullName" class="first_three_inputs" placeholder="Your First name" id="Name"></td>
+				<td rowspan="4"><textarea rows="10" cols="80" id="textarea_feedback_form" id="Comments" placeholder="Type your feedback here."></textarea>
+								<input type="submit" name="submit" value="submit" id="submit_feedback_form">
+				</td>
+			</tr>
+			<tr>
+				<td><input type="email" name="email" class="first_three_inputs" placeholder="Your E-mail address" id="email"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="phone" class="first_three_inputs" placeholder="Contact number" id="Phone"></td>
+			</tr>
+			<tr>
+				<td>
+					<div style="text-align: center;">
+						<select class="select_catagory" name="select catagory">
+							<option selected>Please rate us:</option>
+								<option>Very Satisfied</option>
+								<option>Somewhat Satisfied</option>
+								<option>Neutral</option>
+								<option>Somewhat Dissatisfied</option>
+								<option>Dissatisfied</option>
+						</select>
+					</div>
+				</td>
+			</tr>
+			</table>
+		</form>
+	</div>
+<script>
+	function validateForm(){
+		var x = document.forms["myForm"]["Name"].value;
+		var y = document.forms["myForm"]["email"].value;
+		if(x==""){
+			alert("Name must be filled out");
+			return false;
+		}
+		else if(y==""){
+			alert("E-mail must be filled out");
+			return false;
+		}
+	}
+</script>			
+
+ </body>
+
+</html>

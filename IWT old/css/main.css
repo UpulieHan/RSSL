@@ -1,0 +1,122 @@
+/*to get rid of the default properties*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*to remove the underline of all the links*/
+* {
+	text-decoration: none;
+}
+
+/*the div that holds the whole page*/
+.wrapper{
+	margin: 0 auto;
+} 
+.header{
+	background-color: #ffe000;
+	height: 150px;
+}
+.img{
+	float: left;
+	padding: 20px 30px;
+	width: 100px;
+	height: 100px;
+}
+.title{
+	font-size: 2em;
+	font-family: sans-serif;
+	padding: 40px 50px 30px 200px;
+	width: 650px;
+}
+.fill-div a{
+	display:block;
+	background-color: lightgrey;
+    width:100%;
+    height: 100%;
+}
+.topnav{
+	height: 50px;
+	float: right;
+	margin-top: -30px;
+	text-align: center;
+}
+.topnav ul{
+	height: 100%;
+	list-style-type: none; 
+}
+.topnav ul li{
+	display: inline-block;
+	height: 40px;
+	width: 90px;
+}
+.topnav a:hover{
+	background-color: white;
+	color: black;
+}
+.footer{
+	position: fixed;
+	left:0;
+	bottom: 0;
+	width: 100%;
+	background-color: #ffe000;
+	color: black;
+}
+.socialmedia-text{
+	width: 90%;
+	float: center;
+	padding-top: 10px;
+}
+.socialmedia-text h3{
+	padding: 5px 50px;
+}
+.socialmedia-text a{
+	float: right;
+	padding-left: 75%;
+}
+.socialmedia table{
+	padding: 0px 50px;
+}
+.socialmedia table tr td{
+	padding: 0px 5px;
+}
+.arrow{
+	width: 20px;
+	height: 20px;
+}
+.footer-img {
+	width: 20px;
+	height: 20px;
+}
+.footer-img{
+	width: 30px;
+	height: 30px;
+}
+.copyright{
+	width: 30%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0px 10px 5px 10px;
+}
+.copyright p,a{
+	color: black;
+}
+.middle-left{
+	float: left;
+	text-align: center;
+	width: 25%;
+	height: 150%
+}
+.middle-right{
+	float: right;
+	text-align: center;
+	width: 25%;
+	height: 150%
+}
+.middle-trans{
+	float: center;
+	text-align: center;
+	width: 50%;
+	height: 150%;
+	font-size: 2em;
+}

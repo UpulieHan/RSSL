@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+.clearfix{
+	overflow: none;
+}
+body{
+	background-image: url(../images/1.jpeg);
+	background-size: cover;
+	font-family: monospace;
+}
+div.wrapper{
+	width: 100%;
+	height: 100%;
+}
+header{
+	/*change and add these*/
+	height: 120px;
+}
+.row{
+	max-width: 1200px;
+	margin: auto;
+}
+.main-nav{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.main-nav li{
+	display: inline-block;
+}
+.main-nav li a{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+.main-nav li.active a{
+	border:1px solid white;
+}
+.main-nav li a:hover{
+	border:1px solid white;
+}
+.logo img{
+	width: 150px;
+	height: auto;
+	float: left;
+	/*change and add these*/
+	margin: 10px 0 10px 100px;
+	box-shadow: 0px 0px 10px #000000;
+	border-radius: 4px;
+
+}
+div.button{
+	width: 500px;
+	height: 150px;
+	float: left;
+}
+.button table{
+	margin: 50px 100px;
+	float: left;
+}
+.button table tr td a button{
+	width: 80px;
+	height: 80px;
+	background-color: #1f1f1f;
+	border:0;
+	border-radius: 10px;
+}
+.button table tr td a button:hover{
+	opacity: 0.75;
+}
+.button table tr td a button img{
+	width: 50px;
+	height: 50px;
+}
+.buttons table tr td{
+	padding: 15px 15px 15px 15px;
+	width: 100px;
+	height: 90px;
+}
+.buttons table tr{
+	width: 100%;
+	height: 100%;
+} 
+#map{
+	width: 600px;
+	height: 450px;
+	float: right;
+	margin-right: 50px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+.map h2{
+	padding-left: 775px;
+	font-size: 1.5em;
+	color: white;
+}
+#content{
+	width: 500px;
+	height: 300px;
+	float: left;
+	margin-left: 100px;
+	margin-top: 50px;
+}
+#heading{
+	font-size: 3em;
+}
+#para{
+	font-size: 2em;
+}
+/*.socialmedia table{
+	width: 600px;
+	height: 300px;
+	background-color: red;
+}
+.socialmedia table tr td a img{
+	width: 50px;
+	height: 50px;
+}*/
+#content table tr td{
+	width: 20px;
+	height: 20px;
+	padding: 1px;
+	background-color: #1f1f1f;
+	border:0;
+	border-radius: 10px;
+} 
+#content table tr td a img {
+	width: 70px;
+	height: 70px;
+}
+#content table tr td a img:hover{
+	opacity: 0.75;
+}
+#content img{
+	width: 50px;
+	height: 30px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Page</title>
+	<link rel="stylesheet" type="text/css" href="css/administration.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="row">
+
+				<div class="logo">
+					<img src="images/black.jpg">
+				</div><!-- logo -->
+
+				<ul class="main-nav">
+					<li class="active"><a href="">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">SERVICES</a></li>
+					<li><a href="#">FAQS</a></li>
+					<li><a href="#">NEWS</a></li>
+					<li><a href="#">FAQS</a></li>	
+				</ul>
+			</div><!-- row -->
+		</header>
+		<div class="button">
+			<table>
+				<tr>
+					<td><a href="#"><button onclick="socialmedia()"><img src="images/maps.png" alt="Socialmedia"></button></a></td>
+					<td><a href="#"><button onclick="reports()"><img src="images/reports.png" alt="Reports"></button></a></td>
+					<td><a href="#"><button onclick="calendar()"><img src="images/calendar.png" alt="Calendar"></button></a></td>
+					<td><a href="#"><button onclick="mail()"><img src="images/mail.png" alt="Mail"></button></a></td>
+					<td><a href="#"><button onclick="settings()"><img src="images/settings.png" alt="Settings"></button></a></td>
+					<td><a href="#"><button onclick="users()"><img src="images/users.png" alt="Users"></button></a></td>
+				</tr>
+			</table>
+
+		</div><!-- button -->
+
+		<div class="map">
+			<h2>Check our nearest available service assistants</h2>
+			<div id="map"></div>
+		</div><!-- map -->
+
+		<div id="content">
+			<h2 id="heading"></h2>
+			<p id="para"></p>
+
+			<table id="table">
+				<tr>
+					<td><a id="a1" href="https://www.facebook.com"><img src="images/facebook.png"></a></td>
+					<td><a id="a2" href="https://www.twitter.com"><img src="images/twitter.png"></a></td>
+					<td><a id="a3" href="https://www.instagram.com"><img src="images/instagram.png"></a></td>
+					<td><a id="a4" href="https://www.linkedin.com"><img src="images/linkedin.png"></a></td>
+					<td><a id="a5" href="https://www.pinterest.com"><img src="images/pinterest.png"></a></td>
+				</tr>
+			</table>
+		</div><!-- content -->
+	</div><!-- wrapper -->
+
+	<!-- javascript  -->
+	<script>
+
+
+		function initMaps(){
+			var mapCanvas = document.getElementById("map");
+	  		var mapOptions = {
+	    		center: new google.maps.LatLng(6.9147,79.9733),
+	    		zoom: 10;
+	    	};
+	  		var map = new google.maps.Map(mapCanvas, mapOptions);
+		}
+
+		function socialmedia(){
+			var a = document.getElementById("table");
+			if (a.style.display === "none") {
+     			a.style.display = "block";
+    		} else {
+        		a.style.display = "none";
+    		}
+		}
+		function reports(){
+			var i = document.getElementById("image");
+			if (i.style.display === "none") {
+     			i.style.display = "block";
+    		} else {
+        		i.style.display = "none";
+    		}	
+		}
+
+		function calendar(){
+			var d = new Date();
+			document.getElementById("para").innerHTML = d;	
+			document.getElementById("heading").innerHTML="The current date and time is ";
+			var x = document.getElementById("para");
+			var y = document.getElementById("heading");
+			// if (x.style.display === "none") {
+   //   			x.style.display = "block";
+   //   			y.style.display = "block";
+   //  		} else {
+   //      		x.style.display = "none";
+   //      		y.style.display = "none";
+   //  		}
+		}
+		function mail(){
+
+    	}
+		function settings(){
+		
+		}
+		function users(){
+			
+		}
+	</script>
+
+<!-- key for the map -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEtWCYJY_vLLxsq3YZPVItemEkKqDl_XE&callback=initMaps"></script>
+
+</body>
+</html>

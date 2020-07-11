@@ -1,0 +1,71 @@
+html{
+	overflow: none;
+}
+div.wrapper{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/shelby.jpg");
+}
+.left_panel{
+	margin: 30px;
+	height: 250px;
+	width: 230px;
+	float: left;
+	padding:20px;
+}
+.right_panel{
+	margin: 30px;
+	height: 360px;
+	width: 400px;
+	float: left;
+	padding:20px;
+	color: white;
+	margin-top: 5px;
+}
+caption{
+	margin-bottom: 10px;
+}
+td,th{
+	padding: 10px 10px 10px 20px;
+}
+th{
+	width: 200px;
+	text-align: right;
+}
+td{
+	text-align: left;
+}
+table{
+	float: left;
+	font-family: sans-serif;
+	font-size: 19px;
+}
+img{
+	width: 220px;
+    height: 220px;
+	border-radius: 150px;
+}
+input{
+	margin-top: 35px;
+	margin-left: 25px;
+	color: white; 
+	font-size: 15px;
+	padding: 5px 20px;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	background: transparent;
+	border: 1px solid white;
+}
+#fileToUpload{
+	margin-top: 0;
+	border: none;	
+}
+input:hover{
+	background: white;
+	transition: all 0.5s ease-in; 
+	color:black;
+	cursor: pointer;
+}
+h2{
+	text-transform:uppercase;
+	margin-left: 19px;
+	color: white;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RSSL</title>
+<link rel="stylesheet" type="text/css" href="css/maintheme.css">
+<link rel="stylesheet" type="text/css" href="css/TechnicianReg.css">
+<link rel="shortcut icon" href="images/favicon.png">
+<!-- <script type="text/javascript" src="js/TechnicianRegValidation.js"></script> -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>	
+	<div class="wrapper">
+		<header>
+			<div class="row">
+				<div class="logo">
+					<img src="images/logo.jpg">
+				</div><!-- logo -->
+
+			<ul class="main-nav clearfix">
+				<li><a href="">HOME</a></li>
+				<li><a href="#">ABOUT US</a></li>
+				<li><a href="#">SERVICES</a></li>
+				<li><a href="#">FAQS</a></li>
+				<li><a href="#">NEWS</a></li>
+				<li><a href="#">FEEDBACK</a></li>
+				<li><a href="#">CONTACT US</a></li>
+			</ul>
+			
+			</div><!-- row -->
+		</header>
+	<div class="form">
+	<form name="technicianForm" method="post" action="TechnicianRegInsert.php">
+		<h3>NEW TECHNICIAN REGISTRATION</h3>
+		
+		<table border="0">
+			<tr>
+				<td>First Name :
+					<input type="text" name="fname" placeholder="Namal" style="width: 12em" required></td>
+				<td>Date of Birth:
+					<input type="date" name="dob" required>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td>Last Name :
+					<input type="text" name="lname" placeholder="Rajapaksha" style="width: 12em" required>
+				</td>
+				<td>NIC number:
+					<input type="text" name="nic" placeholder="987654321V" size="50" maxlength="10" style="width: 12em" required>
+				</td>
+			</tr>
+
+				<td>Address:
+					<textarea name="address" rows="4" style="width: 15em" placeholder="No, Street, City" required></textarea></td>
+
+			<tr>
+				<td colspan="2">
+					<p><b>You will receive a post within few days regarding the date date and venue for your interview.
+					If selected you will be gone through a training session where you will learn the basic processes and repairs of your job.</b></p>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td><input type="submit" name="btnSubmit"></td>
+				<td><input type="reset"></td>
+			</tr>
+		</table>
+		
+					
+	</form>
+	</div><!-- form -->
+</body>
+</html>

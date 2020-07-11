@@ -1,0 +1,16 @@
+div.left_panel{
+	background-color: blue;
+	height: 250px;
+	width: 30%;
+	float: left;
+	padding:20px;
+	margin: 50px 30px 30px 50px;
+}
+div.right_panel{
+	margin: 70px 50px 30px 30px;
+	background-color: red;
+	height: 250px;
+	width: 50%;
+	float: right;
+	padding:20px;
+}
